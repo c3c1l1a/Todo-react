@@ -1,0 +1,25 @@
+.form {
+	display: flex;
+	justify-content: space-between;
+	border:  solid 1px lightgrey;
+	padding: 10px 25px;
+	border-radius: 50px;
+	box-shadow: 0 0 5px 0px gray;
+}
+
+.input {
+	border:  none;
+}
+
+.input:focus-visible {
+	outline:  none;
+}
+
+.button {
+	background: goldenrod;
+	color:  white;
+	border-radius: 50px;
+	width: 7vw;
+	height: 7vw;
+	border: none;
+}

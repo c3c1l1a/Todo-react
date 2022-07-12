@@ -1,5 +1,7 @@
 /* eslint-disable */
+import styles from "./InputTodo.module.css";
 import React, { useState } from 'react';
+
 function InputTodo(props) {
   const [state, setTitle] = useState({
     title: '',
@@ -24,9 +26,9 @@ function InputTodo(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Add Todo..." value={state.title} onChange={onChange} name="title"/>
-      <button>Submit</button>
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <input className={styles.input} type="text" placeholder="Add Todo..." value={state.title} onChange={onChange} name="title"/>
+      <button className={styles.button}>+</button>
     </form>
   );
 }

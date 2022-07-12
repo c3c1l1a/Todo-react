@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from "uuid";
+import Header from './Header';
 import TodoList from './TodoList';
 import InputTodo from './InputTodo';
 
@@ -57,7 +58,13 @@ function TodoContainer(props) {
   }
 
   return (
-    <div>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '10px',
+      padding: '10px'
+    }}>
+      <Header />
       <InputTodo addTodoProps={addTodoProps}/>
       <TodoList handleChange={handleChange} 
                 deleteTodoProps={deleteTodoProps}

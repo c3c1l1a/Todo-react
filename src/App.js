@@ -2,7 +2,7 @@
 import TodoContainer from './components/TodoContainer';
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <TodoContainer />
   );

@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-function TodoItem(props) {
+const TodoItem = (props) => {
   const completedStyle = {
     fontStyle: 'italic',
     textDecoration: 'line-through',

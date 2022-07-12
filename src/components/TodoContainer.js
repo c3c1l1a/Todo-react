@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import Header from './Header';
 import TodoList from './TodoList';
 import InputTodo from './InputTodo';
+import styles from "./TodoContainer.module.css";
 
 function TodoContainer(props) {
   const [state, setTodo] = useState({
@@ -58,12 +59,7 @@ function TodoContainer(props) {
   }
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '10px',
-      padding: '10px'
-    }}>
+    <div className={styles.div}>
       <Header />
       <InputTodo addTodoProps={addTodoProps}/>
       <TodoList handleChange={handleChange} 

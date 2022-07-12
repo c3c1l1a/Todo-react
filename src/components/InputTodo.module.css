@@ -9,6 +9,7 @@
 
 .input {
 	border:  none;
+	width: 100%;
 }
 
 .input:focus-visible {
@@ -22,4 +23,15 @@
 	width: 7vw;
 	height: 7vw;
 	border: none;
+}
+
+@media (min-width: 768px) {
+	.form {
+		margin: 0 20vw;
+	}
+	.button {
+		width: 3.2vw;
+		height: 3vw;
+	}
+
 }

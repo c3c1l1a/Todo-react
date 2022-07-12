@@ -1,0 +1,32 @@
+.li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 6px 20px;
+}
+
+.span {
+	overflow-wrap: break-word;
+	width: 100%;
+}
+
+.button {
+	border: none;
+	border-radius: 50px;
+	background: lightcoral;
+	width: 10vw;
+	height: 8vw;
+	padding-top: 3px;
+}
+
+@media (min-width: 768px) {
+	.li {
+		margin: 0 20vw;
+	}
+
+	.button {
+		width: 3.2vw;
+		height: 3vw;
+	}
+
+}

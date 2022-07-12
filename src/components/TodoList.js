@@ -8,6 +8,7 @@ function TodoList(props) {
         return <TodoItem key={todo.id} 
                          handleChange={props.handleChange} 
                          deleteTodoProps={props.deleteTodoProps}
+                         updateTodo={props.updateTodo}
                          todo={todo}/>
       })}
     </ul>

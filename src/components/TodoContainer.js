@@ -58,12 +58,25 @@ function TodoContainer(props) {
     });
   }
 
+  const updateTodo = (title, id) => {
+    setTodo({
+      todos: state.todos.map((todo) => {
+        if (todo.id === id){
+          todo.title = title; 
+          return todo;
+        }
+        return todo
+      })
+    });
+  }
+
   return (
     <div className={styles.div}>
       <Header />
       <InputTodo addTodoProps={addTodoProps}/>
       <TodoList handleChange={handleChange} 
                 deleteTodoProps={deleteTodoProps}
+                updateTodo={updateTodo}
                 todos={state.todos}/>
     </div>
   );

@@ -19,6 +19,14 @@
 	padding-top: 3px;
 }
 
+.textInput {
+	width: 100%;
+	border: none;
+	outline: none;
+	height: 3vw;
+	padding: 0 20px;
+}
+
 @media (min-width: 768px) {
 	.li {
 		margin: 0 20vw;

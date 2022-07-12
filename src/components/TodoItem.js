@@ -35,10 +35,12 @@ const TodoItem = (props) => {
 
   const handleUpdateDone = (e) => {
     if (e.key === 'Enter' || e.type === 'blur'){
-      setState({
-        editing: false
-      });
-      e.target.blur();
+      if (props.todo.title.trim()){
+        setState({
+          editing: false
+        });
+        e.target.blur();
+      } 
     } 
   }
 

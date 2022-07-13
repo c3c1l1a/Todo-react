@@ -1,10 +1,13 @@
 /* eslint-disable */
 
 import React, { useState } from 'react';
+import { Route, Routes } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import Header from './Header';
 import TodoList from './TodoList';
 import InputTodo from './InputTodo';
+import Navbar from './Navbar';
+import About from './pages/About';
 import styles from "./TodoContainer.module.css";
 
 function TodoContainer(props) {
@@ -72,12 +75,21 @@ function TodoContainer(props) {
 
   return (
     <div className={styles.div}>
-      <Header />
-      <InputTodo addTodoProps={addTodoProps}/>
-      <TodoList handleChange={handleChange} 
-                deleteTodoProps={deleteTodoProps}
-                updateTodo={updateTodo}
-                todos={state.todos}/>
+      <Navbar />
+      <Routes>
+        <Route exact path='/' element= {
+          <div>
+            <Header />
+            <InputTodo addTodoProps={addTodoProps}/>
+            <TodoList handleChange={handleChange} 
+                      deleteTodoProps={deleteTodoProps}
+                      updateTodo={updateTodo}
+                      todos={state.todos}/>
+          </div>
+
+        }/>
+        <Route path='about/*' element={<About />}/> 
+      </Routes>
     </div>
   );
 }

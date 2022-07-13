@@ -1,6 +1,6 @@
 /* eslint-disable */
-import styles from "./InputTodo.module.css";
 import React, { useState } from 'react';
+import styles from './InputTodo.module.css';
 
 function InputTodo(props) {
   const [state, setTitle] = useState({
@@ -9,25 +9,25 @@ function InputTodo(props) {
 
   const onChange = (e) => {
     setTitle({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (state.title.trim()) {
-       props.addTodoProps(state.title);
-       setTitle({
-         title: "",
-       });
-     } else {
-       alert("Please write item");
-     }
-  }
+      props.addTodoProps(state.title);
+      setTitle({
+        title: '',
+      });
+    } else {
+      alert('Please write item');
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <input className={styles.input} type="text" placeholder="Add Todo..." value={state.title} onChange={onChange} name="title"/>
+      <input className={styles.input} type="text" placeholder="Add Todo..." value={state.title} onChange={onChange} name="title" />
       <button className={styles.button}>+</button>
     </form>
   );

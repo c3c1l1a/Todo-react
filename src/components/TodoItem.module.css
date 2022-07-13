@@ -1,40 +1,39 @@
 .li {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 20px;
 }
 
 .span {
-	overflow-wrap: break-word;
-	width: 100%;
+  overflow-wrap: break-word;
+  width: 100%;
 }
 
 .button {
-	border: none;
-	border-radius: 50px;
-	background: lightcoral;
-	width: 10vw;
-	height: 8vw;
-	padding-top: 3px;
+  border: none;
+  border-radius: 50px;
+  background: lightcoral;
+  width: 10vw;
+  height: 8vw;
+  padding-top: 3px;
 }
 
 .textInput {
-	width: 100%;
-	border: none;
-	outline: none;
-	height: 3vw;
-	padding: 0 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 3vw;
+  padding: 0 20px;
 }
 
 @media (min-width: 768px) {
-	.li {
-		margin: 0 20vw;
-	}
+  .li {
+    margin: 0 20vw;
+  }
 
-	.button {
-		width: 3.2vw;
-		height: 3vw;
-	}
-
+  .button {
+    width: 3.2vw;
+    height: 3vw;
+  }
 }

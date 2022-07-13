@@ -15,9 +15,7 @@
   font-size: 30px;
   outline: none;
   border-radius: 50px;
-  
 }
-
 
 .hideMenu {
   display: none;
@@ -25,19 +23,18 @@
 
 .showMenu {
   display: flex;
-  gap:  10px;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: blue;
   position: absolute;
   left: 0;
-  top:  0;
+  top: 0;
   width: 100%;
   height: 50vh;
   z-index: 10;
   background: orange;
-  border-radius: 0 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px -1px gray;
 }
 

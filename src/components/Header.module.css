@@ -1,0 +1,13 @@
+.header {
+  font-size: 30px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 0 20vw;
+  }
+}
